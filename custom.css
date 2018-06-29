@@ -1,0 +1,8 @@
+.branding {
+    background-color: black;
+}
+.container-logo {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+}
