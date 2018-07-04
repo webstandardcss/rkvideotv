@@ -8,7 +8,20 @@
 }
 
 
+/* Homepage CSS */
+
+#header > .container {
+    position: relative;
+    min-height: 6em;
+}
+
+/* End Homepage CSS */
+
 /* Menu CSS  */
+
+.header-nav li {
+    background-color: rgba(0, 0, 0, .5);
+}
 
 .header-nav ul {
     margin: 0;
@@ -28,6 +41,10 @@
     display: none;
   }
   
+.header-nav li {
+    width: 100%;
+}
+
   .header-nav li, 
   #toggle-menu, 
   .header-nav .sub-menu {
@@ -70,16 +87,21 @@
   #toggle-menu, 
   .header-nav a {
     padding: 1em 1.5em;
+    position: relative;
+    top: -10px;
   }
   
   .header-nav a {
     transition: all .125s ease-in-out;
     -webkit-transition: all .125s ease-in-out;
+    border-radius: 12px;
+    width: 100%;
   }
   
   .header-nav a:hover {
     background-color: white;
     color: #09c;
+    border-radius: 10% 10% 0% 0%;
   }
   
   .header-nav .sub-menu {
@@ -143,10 +165,11 @@
       border-width: 0;
       margin: 0;
       position: absolute;
-      top: 100%;
+      top: 48px;
       left: 0;
       width: 12em;
       z-index: 3000;
+      border-bottom: 3px solid white;
     }
   
     .header-nav .sub-menu, 
@@ -188,6 +211,10 @@
     .container-logo {
         max-width: 100vw;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
 }
 
 /* End Media Queries */
