@@ -214,7 +214,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-
+    .header-nav li {
+        height: 4.1em;
+    }
 }
 
 /* End Media Queries */
