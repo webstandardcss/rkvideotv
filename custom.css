@@ -176,3 +176,18 @@
   }
 
 /* End Menu CSS */
+
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+    .branding {
+        top: 36px;
+        position: relative;
+    }
+    .container-logo {
+        max-width: 100vw;
+    }
+}
+
+/* End Media Queries */
