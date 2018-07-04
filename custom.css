@@ -1,5 +1,7 @@
 .branding {
     background-color: black;
+    max-height: 250px;
+    overflow: hidden;
 }
 .container-logo {
     max-width: 960px;
