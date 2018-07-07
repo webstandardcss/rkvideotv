@@ -79,7 +79,20 @@
   }
   
   .header-nav {
-    background-color: #09c;
+      background: #959595;
+      background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#959595), color-stop(46%,#0d0d0d), color-stop(50%,#010101), color-stop(53%,#0a0a0a), color-stop(76%,#4e4e4e), color-stop(87%,#383838), color-stop(100%,#1b1b1b));
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 );
+      border-top: 1px solid white;
+      color: #ffffff;
+      /* 
+      border-bottom: 1px solid white;
+      text-transform: uppercase;
+      height: 25.2px;
+      font-size: 12px;
+      overflow: visible;
+      z-index: 100;
+      padding-bottom: 10px; */
   }
   
   #toggle-menu {
@@ -206,13 +219,20 @@
 /* Media Queries */
 
 @media screen and (max-width: 980px) {
-    .branding {
-        top: 36px;
-        position: relative;
-    }
-    .container-logo {
-        max-width: 100vw;
-    }
+  .branding {
+      top: 36px;
+      position: relative;
+  }
+  .container-logo {
+      max-width: 100vw;
+  }
+}
+
+
+@media screen and (min-width: 980px) {
+  .hide-desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
